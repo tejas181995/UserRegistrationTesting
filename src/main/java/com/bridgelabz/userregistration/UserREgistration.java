@@ -7,7 +7,7 @@ public class UserREgistration {
     private static String lastName = "^[A-Z]{1}[a-z]{2,14}$";
     private static String email_ = "^[_A-Za-z0-9-\\+]+(\\.[A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
     private static String phoneNumber = "^[0-9]{2}[ ][6-9]{1}[0-9]{9}$";
-    private static String  PASSWORD = "(?=.*[0-9])(?=.*[A-Z]).{8,15}";
+    private static String  PASSWORD = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=[^$@!#%*?&]*[$#@!%*?&][^$@!#%*?&]*$).{8,}";
 
 
 
