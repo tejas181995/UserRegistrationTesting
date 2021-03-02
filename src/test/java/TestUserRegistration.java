@@ -13,9 +13,11 @@ public class TestUserRegistration {
 
     @Test
     public void testFirstName() {
-        boolean result;
-        result = operation.checkFirstName("Tejas");
-        System.out.println(result);
-        Assertions.assertTrue(result);
+        Assertions.assertTrue(operation.checkFirstName("Tejas"));
+    }
+
+    @Test
+    public void testLastName() {
+        Assertions.assertTrue(operation.checkLastName("Dev"));
     }
 }
