@@ -46,7 +46,7 @@ public class TestUserRegistration {
     @Test
     public void checkPassword() {
         boolean result;
-        result = operation.checkPassword("Qwertyasd");
+        result = operation.checkPassword("QSwertyasd");
         System.out.println(result);
         Assertions.assertTrue(result);
     }
