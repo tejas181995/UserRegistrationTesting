@@ -22,7 +22,7 @@ public class TestUserRegistration {
     @Test
     public void testLastName() {
         boolean result;
-        result = operation.checkLastName("gev");
+        result = operation.checkLastName("Dev");
         System.out.println(result);
         Assertions.assertTrue(result);
     }
@@ -36,9 +36,17 @@ public class TestUserRegistration {
     }
 
     @Test
-    void checkPhoneNumber() {
+    public void checkPhoneNumber() {
         boolean result;
         result = operation.checkPhoneNumber("91 9767998269");
+        System.out.println(result);
+        Assertions.assertTrue(result);
+    }
+
+    @Test
+    public void checkPassword() {
+        boolean result;
+        result = operation.checkPassword("Qwertyasd");
         System.out.println(result);
         Assertions.assertTrue(result);
     }
