@@ -34,4 +34,12 @@ public class TestUserRegistration {
         System.out.println(result);
         Assertions.assertTrue(result);
     }
+
+    @Test
+    void checkPhoneNumber() {
+        boolean result;
+        result = operation.checkPhoneNumber("91 9767998269");
+        System.out.println(result);
+        Assertions.assertTrue(result);
+    }
 }
