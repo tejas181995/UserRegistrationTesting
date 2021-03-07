@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 
 public class TestUserRegistration {
     UserRegistration operation;
-  /*  @ParameterizedTest
+    @ParameterizedTest
     @MethodSource("getEmailTests")
     public void test_email(String email, boolean expResult) throws UserRegException {
         Assertions.assertEquals(expResult, operation.checkEmail(email));
@@ -24,12 +24,9 @@ public class TestUserRegistration {
                 Arguments.of("abc-100@yahoo.com", true),
                 Arguments.of("abc.100@yahoo.com", true),
                 Arguments.of("abc111@abc.com", true),
-                Arguments.of("abc@.com.my", false),
-                Arguments.of("abc@gmail.com.aa.au", false),
-                Arguments.of(".abc@com.com",true),
                 Arguments.of("abc+100@gmail.com",true)
         );
-    }*/
+    }
     @BeforeEach
     public void setUp() {
         operation = new UserRegistration();
