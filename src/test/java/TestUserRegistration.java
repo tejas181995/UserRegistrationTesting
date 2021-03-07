@@ -94,8 +94,9 @@ public class TestUserRegistration {
     }
     @Test
     public void checkPassword_false() {
-       Assertions.assertThrows(UserRegException.class, () -> {
-           operation.checkPassword("Qwsde@$556");
-       });
+        Assertions.assertThrows(UserRegException.class, () -> {
+            operation.checkPassword("Qwsd@#12345");
+        });
     }
+
 }
